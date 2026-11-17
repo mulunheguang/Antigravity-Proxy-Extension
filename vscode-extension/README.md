@@ -1,9 +1,5 @@
 # Antigravity Proxy Extension for macOS 🚀
 
-<p align="center">
-  <img src="icon.png" width="128" alt="Antigravity Proxy" />
-</p>
-
 <p align="center"><b>为 Antigravity App / IDE 提供透明代理的 macOS 插件</b><br />图形化配置 · SOCKS5 上游 · 动态库注入 · SNI 中继 · 环境诊断</p>
 
 > 基于 [raybz/Antigravity-Proxy](https://github.com/raybz/Antigravity-Proxy) 修改，针对新版 macOS Antigravity 的应用结构与代理连接问题进行兼容性修复。原项目的核心方案和大部分代码来自原作者，本仓库保留其署名与 MIT 许可证。
@@ -78,7 +74,9 @@ xcode-select --install
 
 如果本仓库的 [Releases](https://github.com/mulunheguang/Antigravity-Proxy-Extension/releases) 已提供安装包，下载对应的 `darwin-arm64.vsix`；没有发布包时，按下方“从源码打包”生成。
 
-在编辑器中：
+插件可以安装在 **Cursor、VS Code，或支持 VSIX 扩展安装的 Antigravity IDE（反重力 IDE）** 中，选择其中一个即可。这里指的是带有扩展管理功能的 IDE；独立 Antigravity App 是代理目标，不是本步骤的插件安装入口。
+
+以下步骤在你选择的 **Cursor / VS Code / Antigravity IDE** 中操作：
 
 1. 按 `Cmd + Shift + P` 打开命令面板。
 2. 选择 **Extensions: Install from VSIX…（扩展：从 VSIX 安装）**。
